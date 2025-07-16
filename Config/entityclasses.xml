@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <entity_classes>
+        <entity_class name="BashWerewolf"
+                      extends="zombieTemplateMale"
+                      entity_class="EntityZombie"
+                      class="EntityZombie"
+                      avatar_controller="HumanoidAvatarController"
+                      display_name_key="Bash the Werewolf"
+                      tags="animal,wolf,werewolf,bash">
+            <property name="MaxHealth" value="500"/>
+            <property name="Damage" value="30"/>
+            <property name="WalkSpeed" value="1.5"/>
+            <property name="RunSpeed" value="3.5"/>
+            <property name="IsEnemyEntity" value="true"/>
+        </entity_class>
+    </entity_classes>
+</configs>
