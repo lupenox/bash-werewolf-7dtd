@@ -1,0 +1,13 @@
+<buff name="buffBashHealPlayer" duration="10" stackable="false">
+    <effect_group>
+        <modify_stat stat="health" value="2" rate="60"/>
+    </effect_group>
+</buff>
+
+<buff name="buffBashPetHappy" duration="15" stackable="false">
+    <effect_group>
+        <modify_stat stat="stamina" value="10"/>
+        <modify_stat stat="wellness" value="1"/>
+        <triggered_effect trigger="onBuffStart" action="PlaySound" target="self" sound="wolf_happy_growl"/>
+    </effect_group>
+</buff>

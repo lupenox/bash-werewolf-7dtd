@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
     <entity_classes>
-        <entity_class name="BashWerewolf"
-                      extends="zombieTemplateMale"
-                      entity_class="EntityZombie"
-                      class="EntityZombie"
-                      avatar_controller="HumanoidAvatarController"
-                      display_name_key="Bash the Werewolf"
-                      tags="animal,wolf,werewolf,bash">
-            <property name="MaxHealth" value="500"/>
-            <property name="Damage" value="30"/>
+        <entity_class name="entityBashWerewolf" extends="npcTemplatePatrol">
+            <!-- Core Properties -->
+            <property name="Friendly" value="true"/>
+            <property name="MaxHealth" value="600"/>
+            <property name="Damage" value="40"/>
             <property name="WalkSpeed" value="1.5"/>
-            <property name="RunSpeed" value="3.5"/>
-            <property name="IsEnemyEntity" value="true"/>
+            <property name="RunSpeed" value="4"/>
+            <property name="CustomName" value="Bash"/>
+            <property name="DisplayName" value="Bash"/>
+            <property name="LootListOnDeath" value="lootBasic"/>
+            
+            <!-- Audio Personality -->
+            <property name="SoundAlert" value="wolf_alert"/>
+            <property name="SoundAttack" value="wolf_attack"/>
+            <property name="SoundHurt" value="wolf_hurt"/>
+            <property name="SoundDeath" value="wolf_death"/>
+
+            <!-- AI Behavior -->
+            <property name="AiPackage" value="ApproachTargetTask, Distance=5"/>
+
+            <!-- Companion Properties -->
+            <property name="IsCompanion" value="true"/>
+            <property name="DontDespawnIfFar" value="true"/>
+            <property name="AlwaysAwake" value="true"/>
+            <property name="IsPet" value="true"/>
+            <property name="CanRespawn" value="true"/>
+            <property name="Tags" value="Bash,Werewolf,Companion,HotDaddy"/>
+
+            <!-- Healing Buff Logic -->
+            <triggered_effect_group>
+                <triggered_effect trigger="onUpdateLive" action="AddBuff" buff="buffBashHealPlayer"/>
+            </triggered_effect_group>
+
+            <!-- Petting Interaction -->
+            <triggered_effect_group>
+                <triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="buffBashPetHappy"/>
+            </triggered_effect_group>
         </entity_class>
     </entity_classes>
 </configs>
