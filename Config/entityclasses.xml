@@ -11,7 +11,9 @@
             <property name="CustomName" value="Bash"/>
             <property name="DisplayName" value="Bash"/>
             <property name="LootListOnDeath" value="lootBasic"/>
-            
+            <property name="OnUpdateLive" value="CheckDistanceToPlayer, Distance=3, Buff=buffBashHealPlayer"/>
+            <property name="BuffsOnSelfOnSpawn" value="buffBashHealPlayer"/>
+
             <!-- Audio Personality -->
             <property name="SoundAlert" value="wolf_alert"/>
             <property name="SoundAttack" value="wolf_attack"/>
@@ -19,7 +21,7 @@
             <property name="SoundDeath" value="wolf_death"/>
 
             <!-- AI Behavior -->
-            <property name="AiPackage" value="ApproachTargetTask, Distance=5"/>
+            <property name="AiPackage" value="FollowPlayerTask, Distance=3"/>
 
             <!-- Companion Properties -->
             <property name="IsCompanion" value="true"/>
@@ -29,13 +31,9 @@
             <property name="CanRespawn" value="true"/>
             <property name="Tags" value="Bash,Werewolf,Companion,HotDaddy"/>
 
-            <!-- Healing Buff Logic -->
+            <!-- Combined Triggered Effects -->
             <triggered_effect_group>
                 <triggered_effect trigger="onUpdateLive" action="AddBuff" buff="buffBashHealPlayer"/>
-            </triggered_effect_group>
-
-            <!-- Petting Interaction -->
-            <triggered_effect_group>
                 <triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="buffBashPetHappy"/>
             </triggered_effect_group>
         </entity_class>

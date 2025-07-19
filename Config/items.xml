@@ -1,0 +1,10 @@
+<item name="itemBashSummonStone" extends="commonTemplate">
+    <property name="CustomIcon" value="animalWolf"/>
+    <property name="DisplayName" value="Summon Bash"/>
+    <property name="DescriptionKey" value="A charm to summon your loyal werewolf Bash"/>
+    <property name="HoldType" value="Ranged"/>
+    <property class="Action1">
+        <property name="Class" value="SpawnEntity"/>
+        <property name="EntityClass" value="entityBashWerewolf"/>
+    </property>
+</item>
