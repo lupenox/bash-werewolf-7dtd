@@ -1,0 +1,11 @@
+🎧 FL STUDIO SOUND LIST — BASH WEREWOLF MOD
+
+Each entry includes the filename (for .ogg export) and the intended sound design.
+
+- bash_heal_growl.ogg: Soft healing growl when Bash heals you
+- bash_rage_growl.ogg: Fierce snarl when Bash enters rage mode
+- wolf_happy_growl.ogg: Playful growl when Bash is petted
+- bash_double_claim_snarl.ogg: Dual growl when both Bashes are near
+- cub_heartbeat_wounded.ogg: Heartbeat and soft whimper when player's health is low
+- bash_rage_support_growl.ogg: Bash growling encouragement when he rages and shares power
+- bash_moon_bond_whisper.ogg: Whisper or gentle howl when bonded under moonlight

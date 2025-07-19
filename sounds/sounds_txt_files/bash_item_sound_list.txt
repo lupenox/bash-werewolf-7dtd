@@ -1,0 +1,6 @@
+🎧 FL STUDIO SOUND LIST — BASH SUMMON ITEM SOUNDS
+
+These sounds play when summon items are used in-game.
+
+- bash_login_whisper.ogg: Soft whisper or voice line when summoning regular Bash
+- bash_rage_growl.ogg: Aggressive growl or snarl when summoning Brutal Bash

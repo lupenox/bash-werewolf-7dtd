@@ -1,0 +1,9 @@
+🎧 FL STUDIO SOUND LIST — BASH ENTITY SOUNDS
+
+These sounds are tied to in-game events like combat and reactions.
+
+- wolf_alert.ogg: Standard alert howl/growl when Bash senses danger
+- wolf_attack.ogg: Attack growl/snarl when Bash lunges at enemies
+- wolf_hurt.ogg: Grunt or growl when Bash is injured
+- wolf_death.ogg: Final breath or howl when Bash dies
+- wolf_alert_deep.ogg: Deeper version of alert howl for Bash (Brutal variant)
